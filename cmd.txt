@@ -1,0 +1,4 @@
+docker exec -it fastapi_tests bash
+uvicorn app.main:app --reload
+docker restart fastapi_tests
+docker exec -it postgresql_tests bash
